@@ -5735,3 +5735,13 @@ const data = [{
     ]
   }
 ]
+
+
+/*estados-cidades.js apresente no console o estado,  a sigla e as cidades fora da array
+
+Todos os 3 exercicios podem ser resolvidos com percorrimento de listas e objetos, porém, os desafios precisarão de metodos de arrays do JavaScript.
+*/
+
+let apresentandoEstados = data[0].estados;
+console.log(apresentandoEstados);
+

@@ -1,4 +1,4 @@
-const obj = [
+const filmes = [
     {
         "Title":"10 Things I Hate About You",
         "Year":"1999",
@@ -75,3 +75,22 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+// apresente no console o Title, Plot e Awards
+// DESAFIO: Apresente Genre e Actors numa lista
+//
+console.log("           Cinemateca");
+console.log("");
+console.log("");
+
+for(let i=0; i <= filmes.length-1; i++){
+    let akane = filmes[i];
+  console.table("Title: " + akane.Title);
+    console.table("Plot: " + akane.Plot);
+    console.table("Awards: " + akane.Awards);
+    console.log("");
+}
+
+for (var {Genre: g, Actors: a } of filmes) {
+    console.log("Genre: " + g + ", Actors: " + a);
+}

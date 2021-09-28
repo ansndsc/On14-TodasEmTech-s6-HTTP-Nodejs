@@ -149,3 +149,15 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+// colors-rgb.js apresente no console o nome da cor e o rgb.
+//     DESAFIO: apresente o nome da cor e o codigo numa string unica
+//           exemplo: "aliceblue - rgb: 240, 248, 255, 1"
+
+for (let prop2 in obj) {
+    //hasOwnProperty > para garantir que vai resgatar apenas propriedades do meu objeto
+    if (obj.hasOwnProperty(prop2)){
+        //utilizando obj[prop2] vai retornar os valores.
+        console.table(obj[prop2]);
+    }
+}

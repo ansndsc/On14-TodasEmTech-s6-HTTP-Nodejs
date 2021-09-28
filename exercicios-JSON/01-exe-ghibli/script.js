@@ -7,7 +7,7 @@
 //     chave: valor
 //   }
 // ]
-const jsonDeFilmes = [
+const data = [
       {
         "title": "Castle in the Sky",
         "description": "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world."
@@ -46,8 +46,8 @@ const jsonDeFilmes = [
 //   console.log(i)
 // }
 // tentar pra ver se o limite funciona com essa estrutura: >= 10 && <=20
-for(let i=0; i <= jsonDeFilmes.length-1; i++){
-  let filme = jsonDeFilmes[i]
+for(let i=0; i <= data.length-1; i++){
+  let filme = data[i]
   console.log(filme.title)
   console.log(filme.description)
   console.log("************************")
